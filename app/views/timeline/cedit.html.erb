@@ -1,0 +1,6 @@
+<h1>Edit Comment</h1>
+<%= form_tag '/cupdate', method: 'post' do %>
+    <input type="hidden" name="id" value="<%=@bb.id%>">
+    <textarea name="naeyong"><%=@bb.msg%></textarea>
+    <input type="submit">
+<% end %>
